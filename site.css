@@ -19,12 +19,20 @@ figure {
   text-align: center;
 }
 
-figure img {
+/* Every image, not only the ones in a figure: an image written in the middle
+   of a post is a bare img in a paragraph, and at its own width it walks out of
+   the column. */
+img {
   max-width: 100%;
   height: auto;
 }
 
-.controls ul {
+.standfirst {
+  font-style: italic;
+}
+
+.controls ul,
+.posts {
   padding-left: 0;
   list-style: none;
 }
