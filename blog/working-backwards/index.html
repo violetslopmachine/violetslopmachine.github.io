@@ -26,10 +26,125 @@
         <img src="/images/blog/port_07.png" width="1132" height="745"
              alt="Lorem ipsum dolor sit amet consectetur adipiscing">
       </figure>
-<p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit
-quo minus id quod maxime placeat facere possimus.</p>
-<p>Omnis voluptas assumenda est, omnis dolor repellendus, and <em><strong>both at once</strong></em>
-where a sentence wants them.</p>
+      <p class="standfirst">Every block and every inline this parser knows, written out in one post.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. This post exists to be looked at:
+it uses every construct the parser understands, so a page that stops rendering
+one of them has somewhere to show it.</p>
+<h1>Setext, First Level</h1>
+<h2>Setext, Second Level</h2>
+<h2>ATX, Second Level</h2>
+<h3>ATX, Third Level</h3>
+<h4>ATX, Fourth Level</h4>
+<h5>ATX, Fifth Level</h5>
+<h6>ATX, Sixth Level</h6>
+<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+aliquip ex ea commodo consequat.</p>
+<hr />
+<hr />
+<hr />
+<h2>Quotations</h2>
+<blockquote>
+<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+<blockquote>
+<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa.</p>
+<ul>
+<li>Qui officia deserunt mollit anim id est laborum</li>
+<li>Sed ut perspiciatis unde omnis iste natus error</li>
+</ul>
+</blockquote>
+</blockquote>
+<h2>Lists</h2>
+<p>Tight, and a change of bullet character starts a list of its own, which is
+why these three are three lists and not one:</p>
+<ul>
+<li>Nemo enim ipsam voluptatem quia voluptas sit aspernatur</li>
+</ul>
+<ul>
+<li>Neque porro quisquam est, qui dolorem ipsum quia dolor</li>
+</ul>
+<ul>
+<li>Ut enim ad minima veniam, quis nostrum exercitationem</li>
+</ul>
+<p>Loose, because the items are separated by blank lines:</p>
+<ul>
+<li>
+<p>Quis autem vel eum iure reprehenderit qui in ea voluptate</p>
+</li>
+<li>
+<p>Velit esse quam nihil molestiae consequatur, vel illum qui</p>
+</li>
+</ul>
+<p>Ordered, numbered with a dot:</p>
+<ol>
+<li>At vero eos et accusamus et iusto odio dignissimos</li>
+<li>Ducimus qui blanditiis praesentium voluptatum deleniti</li>
+</ol>
+<p>Ordered, numbered with a bracket and starting late:</p>
+<ol start="7">
+<li>Atque corrupti quos dolores et quas molestias excepturi</li>
+<li>Sint occaecati cupiditate non provident, similique sunt</li>
+</ol>
+<p>Nested, a quotation inside an item:</p>
+<ol>
+<li>
+<p>Et harum quidem rerum facilis est et expedita distinctio:</p>
+<blockquote>
+<p>Nam libero tempore, cum soluta nobis est eligendi optio.</p>
+</blockquote>
+</li>
+<li>
+<p>Cumque nihil impedit quo minus id quod maxime placeat facere.</p>
+</li>
+</ol>
+<h2>Code</h2>
+<p>Indented by four spaces:</p>
+<pre><code>lorem ipsum dolor
+sit amet consectetur
+</code></pre>
+<p>Fenced with backticks, naming its language:</p>
+<pre><code class="language-ruby">def lorem(ipsum)
+  ipsum.map { |dolor| dolor.to_s }
+end
+</code></pre>
+<p>Fenced with tildes, naming nothing:</p>
+<pre><code>lorem ipsum dolor sit amet
+consectetur adipiscing elit
+</code></pre>
+<h2>Inline</h2>
+<p>Emphasis with asterisks is <em>lorem ipsum</em> and with underscores is <em>dolor sit</em>.
+Strong is <strong>amet consectetur</strong> and <strong>adipiscing elit</strong>. Both together are
+<em><strong>sed do eiusmod</strong></em>. A code span is <code>tempor incididunt</code>, and a code span
+holding a backtick is <code>labore ` dolore</code>.</p>
+<p>Backslash escapes keep *asterisks* and _underscores_ as themselves, and
+character references arrive as characters: &amp; — ¾ # and
+A. Inside a code span the same reference stays as it was typed:
+<code>&amp;frac34;</code>.</p>
+<p>Raw HTML sits in the middle of a sentence as
+<abbr title="lorem ipsum dolor sit">lid</abbr>, as
+<span class="lorem">ipsum dolor</span>, and as a <em>borrowed emphasis</em>.</p>
+<p>A hard break made with a backslash,<br />
+carries to the next line. A hard break made with two spaces,<br />
+does the same. A soft break
+is only a newline and closes up.</p>
+<h2>Links and images</h2>
+<p>An inline <a href="https://example.com/dolor">lorem ipsum</a>, one carrying a title
+<a href="https://example.com/consectetur" title="Adipiscing elit sed">sit amet</a>, a full
+reference <a href="https://example.com/reference" title="Lorem ipsum dolor">eiusmod tempor</a>, a collapsed reference <a href="https://example.com/reference" title="Lorem ipsum dolor">ref</a>, a shortcut
+reference <a href="https://example.com/reference" title="Lorem ipsum dolor">ref</a>, and a bare autolink <a href="https://example.com/incididunt">https://example.com/incididunt</a>. An
+internal one goes to the <a href="/">front page</a>.</p>
+<p>An inline image:</p>
+<p><img src="/images/blog/port_02.png" alt="Lorem ipsum dolor sit amet" /></p>
+<p>And a reference image:</p>
+<p><img src="/images/blog/port_08.png" alt="Dolor sit amet consectetur" /></p>
+<h2>HTML blocks</h2>
+<aside>
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis.
+</aside>
+<div class="lorem">
+  <p>Suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.</p>
+</div>
+<!-- Quis autem vel eum iure reprehenderit qui in ea voluptate. -->
     </main>
     <footer>
       <p>static</p>
