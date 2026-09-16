@@ -6,10 +6,10 @@
  * Gallagher. Taken 2026-09-12, unmodified, from
  * https://raw.githubusercontent.com/sindresorhus/modern-normalize/refs/heads/main/modern-normalize.css
  *
- * It is folded in here rather than vendored under third_party/ because this
- * site publishes exactly one stylesheet, and a build step to join two files
- * would be machinery in place of a paste. Its licence is MIT, which requires
- * the notice below to travel with the copy, so it does.
+ * It is folded in here rather than vendored under src/third_party/ because
+ * this site publishes exactly one stylesheet, and a build step to join two
+ * files would be machinery in place of a paste. Its licence is MIT, which
+ * requires the notice below to travel with the copy, so it does.
  *
  * MIT License
  *
