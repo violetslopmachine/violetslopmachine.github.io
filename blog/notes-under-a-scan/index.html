@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Notes Under a Scan &middot; static</title>
+    <link rel="stylesheet" href="/site.css">
+  </head>
+  <body>
+    <header>
+      <a href="/">static</a>
+      <nav>
+        <ul>
+          <li><a href="/">Daily Image</a></li>
+          <li><a href="/blog/" aria-current="true">Blog</a></li>
+          <li><a href="/portfolio/">Portfolio</a></li>
+          <li><a href="/about/">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Notes Under a Scan</h1>
+      <p class="dateline"><time datetime="2026-09-12">2026-09-12</time></p>
+      <p class="standfirst">Dashes, abbreviations and a table of sizes, and what it takes to type them.</p>
+<p>The captions under the portfolio pieces have been fighting me all week. A
+measurement wants a multiplication sign rather than the letter x. A range of
+years wants an en dash rather than a hyphen. And half the words I reach for
+want explaining to anyone who has not stood in a paper shop.</p>
+<p>None of that is a typography problem. It is a notation problem, and the
+notation has to survive being typed into a plain text file on a Tuesday.</p>
+<h2>Three characters I keep needing</h2>
+<ul>
+<li><code>&amp;times;</code>, so that <code>760 &amp;times; 1090</code> sets as 760 × 1090 and not as
+something you are meant to work out</li>
+<li><code>&amp;ndash;</code>, so that <code>1998&amp;ndash;2003</code> closes up the way a range should:
+1998–2003</li>
+<li><code>&amp;frac12;</code>, for the sheet that came back 89½ centimetres and would
+not be talked out of it</li>
+</ul>
+<p>Each is a name rather than a keystroke, which means I can type it and still
+read the file a year later. The alternative is pasting a character I cannot
+see, cannot search for, and cannot tell from the one next to it.</p>
+<h2>The one that needs markup instead</h2>
+<p>Paper weight is given in <abbr title="grams per square metre">gsm</abbr>
+everywhere on this site, and an abbreviation is not a character — it is
+a word with something attached to it. That wants a tag, and a tag written in
+the middle of a sentence stays a tag now.</p>
+<aside>
+A sheet at 300 gsm is roughly what most people mean by card. Below 200 it
+will cockle the moment anything wet touches it, which I learned twice.
+</aside>
+<p>The sizes themselves go in a block, indented with a tab so the columns hold:</p>
+<pre><code>Long Horizon	760 x 1090
+Wide Water	420 x 594
+Slow Return	297 x 420
+</code></pre>
+<p>Nothing in there is markdown and nothing in there should be. A code block is
+the one place a column of numbers is allowed to be a column of numbers, and
+the tabs inside it are left exactly as they were typed — which is the
+whole reason the letter x is back.</p>
+    </main>
+    <footer>
+      <p>static</p>
+    </footer>
+  </body>
+</html>
